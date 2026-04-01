@@ -4,9 +4,9 @@ import { registerCommands } from './commands';
 import { registerCallbacks } from './handlers/callback.handler';
 import { registerMessages } from './handlers/message.handler';
 
-registerCommands(bot)
-registerCallbacks(bot)
-registerMessages(bot)
+registerCommands(bot as any)
+registerCallbacks(bot as any)
+registerMessages(bot as any)
 
 bot.launch()
 console.log("✅ Bot ishga tushdi")
